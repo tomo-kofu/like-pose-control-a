@@ -49,15 +49,30 @@ https://kunsen.net/2021/01/30/post-3543/
 3. Pose/Hand/Facemeshの切り替え
 ソースの81行目付近の定義(以下)を切り替える(使わないのはコメントアウトする)
 
+```
 #define DETECT_MODE_POSE        1
 //#define DETECT_MODE_HAND        1
 //#define DETECT_MODE_FACE_MESH   1
+```
 
 ソースの場所は以下のURL
 https://github.com/tomo-kofu/like-pose-control-a/blob/bf505cb3e9a2fcd185975acbcc26cf37421ee2dc/src/demo_run_graph_main.cc#L81
 
-4. Pose Trackingのビルド
-https://kunsen.net/2021/01/30/post-3543/#Pose_Tracking
+4. ビルド
+
+4.1. Pose
+
+参考：https://kunsen.net/2021/01/30/post-3543/#Pose_Tracking
+
+bazel build -c opt --define MEDIAPIPE_DISABLE_GPU=1 --action_env PYTHON_BIN_PATH=$env:PYTHON_PATH mediapipe/examples/desktop/pose_tracking:pose_tracking_cpu
+
+4.2. Hand
+
+bazel build -c opt --define MEDIAPIPE_DISABLE_GPU=1 --action_env PYTHON_BIN_PATH=%PYTHON_PATH% mediapipe/examples/desktop/hand_tracking:hand_tracking_cpu
+
+4.3. Facemesh
+
+bazel build -c opt --define MEDIAPIPE_DISABLE_GPU=1 --action_env PYTHON_BIN_PATH=$env:PYTHON_PATH mediapipe/examples/desktop/face_mesh:face_mesh_cpu
 
 
 ## 使い方
