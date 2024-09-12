@@ -1,0 +1,33 @@
+{
+  "template_config": [
+    [
+      {"frame_diff_v1": {
+        "action_codes_explain": ["squat ", "ゆっくりな動きは計測できない。フレームを保存しているバッファが足りない。"],
+        "action_codes": ["0x00040053", "0x00040051", "0x00040055", "0x00040041", "0x00040054", "0x00040020"],
+        "key_points": [52],
+        "check_vector": [{"threshold": -100.0, "condition": 4}, {"threshold": -0.1, "condition": 1}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold": 0.0, "condition": 4}, {"threshold": 0.6, "condition": 4}, {"threshold": 0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.35, "condition": 4},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["pu ",    "バッファ：frame_diff_landmarks_max_buffer_msec　デフォルト：1000"],
+        "action_codes": ["0x00040050", "0x00040055", "0x00040020"],
+        "key_points": [52],
+        "check_vector": [{"threshold": -100.0, "condition": 4}, {"threshold": -0.1, "condition": 1}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold": 0.0, "condition": 4}, {"threshold": 0.6, "condition": 4}, {"threshold": 0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.2, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["am "],
+        "action_codes": ["0x00040041", "0x0004004d", "0x00040020"],
+        "key_points": [52],
+        "check_vector": [{"threshold": -100.0, "condition": 4}, {"threshold": 0.1, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold": 0.2, "condition": 4}, {"threshold": 0.4, "condition": 4}, {"threshold": 0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.15, "condition": 4},
+        "action_flags": 0
+      }}
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "target game": "street view",
+  "game explain 1": "前進:両膝の足踏み(大きく上げる).",
+  "game explain 2": "右旋回:右上に右手首を挙げる.",
+  "game explain 3": "左旋回:左上に左手首を挙げる.",
+  "template_config": [
+    [
+      {"sum_v1": {
+        "action_codes_explain": "両膝の移動距離を計測し、upボタンを実施",
+        "action_codes": ["0x00040026"],
+        "key_points": [2, 25, 2, 26],
+        "threshold_conditions": {"threshold": 3.0, "condition": 4},
+        "visibility_threshold": 0.75,
+        "action_flags": 0
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "right",
+        "action_codes": ["0x00040027"],
+        "key_points": [1, 16, 1, 300, 1, 1, 16, 2, 300, 1],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "left",
+        "action_codes": ["0x00040025"],
+        "key_points": [1, 15, 1, 700, 5, 1, 15, 2, 300, 1],
+        "action_flags": 1
+      }}
+    ]
+  ]
+}

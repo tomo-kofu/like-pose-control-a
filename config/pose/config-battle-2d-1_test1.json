@@ -1,0 +1,70 @@
+{
+  "template_config": [
+    [
+      {"coordinate_v2": {
+        "action_codes_explain": ["key up"],
+        "action_codes": ["0x00040026"],
+        "key_points": [1, 33, 2],
+        "threshold_conditions": {"threshold": 0.4, "condition": 1},
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["key down"],
+        "action_codes": ["0x00040028"],
+        "key_points": [1, 33, 2],
+        "threshold_conditions": {"threshold": 0.6, "condition": 4},
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["key right"],
+        "action_codes": ["0x00040027"],
+        "key_points": [1, 33, 1],
+        "threshold_conditions": {"threshold": 0.6, "condition": 4},
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["key left"],
+        "action_codes": ["0x00040025"],
+        "key_points": [1, 33, 1],
+        "threshold_conditions": {"threshold": 0.4, "condition": 1},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["u "],
+        "action_codes": ["0x00040055", "0x00040020"],
+        "key_points": [11, 15, 52],
+        "check_vector": [{"threshold": 0.1, "condition": 5}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold": 0.6, "condition": 4}, {"threshold": 0.0, "condition": 4}, {"threshold": 0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.7, "condition": 4},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["p "],
+        "action_codes": ["0x00040050", "0x00040020"],
+        "key_points": [11, 15, 52],
+        "check_vector": [{"threshold": 0.1, "condition": 5}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold": 0.6, "condition": 4}, {"threshold": 0.0, "condition": 4}, {"threshold": 0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.5, "condition": 4},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["j "],
+        "action_codes": ["0x0004004a", "0x00040020"],
+        "key_points": [23, 25, 27, 52],
+        "check_vector": [{"threshold": 0.1, "condition": 5}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold": 0.4, "condition": 4}, {"threshold": 0.0, "condition": 4}, {"threshold": 0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 1.6, "condition": 4},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["k "],
+        "action_codes": ["0x0004004b", "0x00040020"],
+        "key_points": [23, 25, 27, 52],
+        "check_vector": [{"threshold": 0.1, "condition": 5}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold": 0.4, "condition": 4}, {"threshold": 0.0, "condition": 4}, {"threshold": 0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.8, "condition": 4},
+        "action_flags": 0
+      }}
+    ]
+  ]
+}

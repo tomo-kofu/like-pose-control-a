@@ -1,0 +1,24 @@
+{
+  "target game": "chrome://dino",
+  "game explain": "jump:open mouse.",
+  "game explain": "down:look down.",
+  "template_config": [
+    [
+      {"explain": "口を上下に開く:↑、下を向く:↓"},
+      {"vector_dist_compare_v1": {
+        "action_codes_explain": "up",
+        "action_codes": ["0x00040026"],
+        "key_points": [13, 14, 159, 145, 0, 0, 4],
+        "key_points_explain": ["1_start:lip_inner_upper, 1_end:lip_inner_lower, 2_start:left_eye_upper, 2_end:left_eye_lower, 1_offset_1:0, 2_offset:0, 4:<="],
+        "action_flags": 1
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": "down",
+        "action_codes": ["0x00040028"],
+        "key_points": [3, 1, 2],
+        "threshold_conditions": {"threshold": 0.02, "condition": 4},
+        "action_flags": 1
+      }}
+    ]
+  ]
+}

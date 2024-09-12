@@ -1,0 +1,20 @@
+{
+  "template_config": [
+    [
+      {"coordinate_v2": {
+        "action_codes_explain": "up",
+        "action_codes": ["0x00040026"],
+        "key_points": [1, 33, 2],
+        "threshold_conditions": {"threshold": 0.5, "condition": 1},
+        "action_flags": 1
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": "down",
+        "action_codes": ["0x00040028"],
+        "key_points": [3, 43, 5],
+        "threshold_conditions": {"threshold": 150.0, "condition": 1},
+        "action_flags": 1
+      }}
+    ]
+  ]
+}

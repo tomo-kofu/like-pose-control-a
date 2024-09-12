@@ -1,0 +1,37 @@
+{
+  "template_config": [
+    [
+      {"sum_v1": {
+        "action_codes": ["0x00040026"],
+        "key_points": [2, 13, 2, 14, 2, 25, 2, 26],
+        "threshold_conditions": {"threshold": 0.05, "condition": 4},
+        "visibility_threshold": 0.75,
+        "action_flags": 0
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "左肩の横の傾き、右旋回",
+        "action_codes": ["0x00041127"],
+        "key_points": [4, 11, 2, -20000, 1],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "右肩の横の傾き、左旋回",
+        "action_codes": ["0x00041125"],
+        "key_points": [4, 12, 2,  20000, 5],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "顔の上下の傾き、下を向く",
+        "action_codes": ["0x00041128"],
+        "key_points": [4, 43, 1,  55000, 5],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "顔の上下の傾き、上を向く",
+        "action_codes": ["0x00041126"],
+        "key_points": [4, 43, 1,  43000, 1],
+        "action_flags": 1
+      }}
+    ]
+  ]
+}

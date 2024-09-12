@@ -1,0 +1,98 @@
+{
+  "pc_info": {
+    "main_display_width": 1920,
+    "main_display_height": 1080,
+    "no_mouse_absolute_rate": 0,
+    "camera_id": 0,
+    "camera_display_width": 640,
+    "camera_display_height": 360,
+    "camera_fps": 30,
+    "camera_proc_fps": 10.0,
+    "camera_low_proc_fps": 1.0
+  }, 
+  "action_info": {
+    "focus_display_left": 0,
+    "focus_display_top": 0,
+    "focus_display_right": 640,
+    "focus_display_bottom": 360,
+    "1focus_display_left": 100,
+    "1focus_display_top": 100,
+    "1focus_display_right": 600,
+    "1focus_display_bottom": 300,
+    "2focus_display_left": 0,
+    "2focus_display_top": 0,
+    "2focus_display_right": 640,
+    "2focus_display_bottom": 260,
+    "0display_mosaic_scale": 1,
+    "display_face_mosaic_width": 3.5,
+    "display_face_mosaic_height": 3.5,
+    "display_mosaic_scale": 10,
+    "display_face_mosaic_scale": 1,
+    "1display_face_mosaic_scale": 30,
+    "1display_face_mosaic_width": 1.5,
+    "1display_face_mosaic_height": 1.5,
+    "frame_diff_frame_memory_msec": 1000,
+    "person_size_scale_coordinate": 1.0,
+    "person_size_scale_sum": 1.0,
+    "person_size_scale_frame_diff": 1.0,
+    "person_size_scale_dist_compare": 1.0,
+    "key_group": [
+      ["0x00040026", "0x00040028"],
+      ["0x00040025", "0x00040027"],
+      ["0x00040030", "0x00040031", "0x00040032", "0x00040033", "0x00040034", "0x00040035", "0x00040036", "0x00040037", "0x00040038", "0x00040039"],
+      ["0x00040041", "0x00040042", "0x00040043", "0x00040044", "0x00040045", "0x00040046", "0x00040047", "0x00040048", "0x00040049", "0x0004004A", "0x0004004B", "0x0004004C", "0x0004004D", "0x0004004E", "0x0004004F", 
+       "0x00040051", "0x00040052", "0x00040053", "0x00040054", "0x00040055", "0x00040056", "0x00040057", "0x00040058", "0x00040059", "0x0004005A"]
+    ], 
+    "key_group_explain": [
+      "up, down",
+      "left, right",
+      "0 - 9",
+      "a - z"
+    ]
+  }, 
+  "template_config": [
+    [
+      {"coordinate_v2": {
+        "action_codes_explain": ["3:移動：mouse up"],
+        "action_codes": ["0x00040028"],
+        "key_points": [1, 33, 2],
+        "threshold_conditions": {"threshold": 0.3,  "condition": 1},
+        "display_color": "0xff5555",
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["4:移動：mouse down"],
+        "action_codes": ["0x00040028"],
+        "key_points": [1, 33, 2],
+        "threshold_conditions": {"threshold": 0.6,  "condition": 4},
+        "display_color": "0xff5555",
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["5:移動：mouse right"],
+        "action_codes": ["0x00040028"],
+        "key_points": [1, 33, 1],
+        "threshold_conditions": {"threshold": 0.4,  "condition": 1},
+        "display_color": "0xff5555",
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["6:移動：mouse left"],
+        "action_codes": ["0x00040028"],
+        "key_points": [1, 33, 1],
+        "threshold_conditions": {"threshold": 0.6,  "condition": 4},
+        "display_color": "0xff5555",
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["7:skill:対地：大きなパンチ：LEFT"],
+        "action_codes": ["0x00040028"],
+        "key_points": [11, 15, 41],
+        "check_vector": [{"threshold":    0.0, "condition": 4}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.7, "condition": 4}, {"threshold":    0.0, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 1.2, "condition": 5},
+        "action_flags": 0
+      }}
+    ]
+  ]
+}

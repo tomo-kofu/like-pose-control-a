@@ -1,0 +1,24 @@
+{
+  "target game": "chrome://dino",
+  "game explain": "jump:center hand upper 2D up line.",
+  "game explain": "down:center hand under 2D down line.",
+  "template_config": [
+    [
+      {"explain": "手全体の移動は、手のロストが発生し、次の検出が遅れるのが課題。移動しない操作がよい。"},
+      {"coordinate_v2": {
+        "action_codes_explain": "up",
+        "action_codes": ["0x00040026"],
+        "key_points": [1, 21, 2],
+        "threshold_conditions": {"threshold": 0.5, "condition": 1},
+        "action_flags": 1
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": "down",
+        "action_codes": ["0x00040028"],
+        "key_points": [1, 21, 2],
+        "threshold_conditions": {"threshold": 0.8, "condition": 4},
+        "action_flags": 1
+      }}
+    ]
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "target game": "cluster",
+  "game explain 1": "前進:両膝の足踏み(大きく上げる).",
+  "game explain 2": "左旋回:左を向く.",
+  "game explain 3": "右旋回:右を向く.",
+  "game explain 4": "ジャンプ:ジャンプ(体の中心が真ん中の横の線より上に行く).",
+  "game explain 5": "左手の挙手:左上の枠に左手首を挙げる.",
+  "game explain 6": "右手の挙手:右上の枠に右手首を挙げる.",
+  "game explain 7": "左手装備:左端に左手を伸ばす.",
+  "game explain 8": "右手装備:右端に右手を伸ばす.",
+  "template_config": [
+    [
+      {"sum_v1": {
+        "action_codes_explain": "両膝の移動距離を計測し、upボタンを実施",
+        "action_codes": ["0x00040026"],
+        "key_points": [2, 25, 2, 26],
+        "threshold_conditions": {"threshold": 0.66, "condition": 4},
+        "visibility_threshold": 0.75,
+        "action_flags": 16
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "left(by mouse move)",
+        "action_codes": ["0x00028003", 300, 300, "0x00010028", "0x00028001", 225, 300, "0x00010028", "0x00028001", 250, 300, "0x00010014", "0x00028005", 250, 300, "0x00010014", "0x00028005", 250, 300, "0x00010014", "0x00028005", 250, 300],
+        "key_points": [3, 39, 1, -80, 2],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "right(by mouse move)",
+        "action_codes": ["0x00028003", 300, 300, "0x00010028", "0x00028001", 375, 300, "0x00010028", "0x00028001", 350, 300, "0x00010014", "0x00028005", 350, 300, "0x00010014", "0x00028005", 350, 300, "0x00010014", "0x00028005", 350, 300],
+        "key_points": [3, 39, 1, 80, 4],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "jump: space",
+        "action_codes": ["0x00040020"],
+        "key_points": [1, 33, 2, 400, 2],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "left hand up: z",
+        "action_codes": ["0x0004005a"],
+        "key_points": [1, 15, 1, 500, 1, 1, 15, 2, 300, 1],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "right hand up: c",
+        "action_codes": ["0x00040043"],
+        "key_points": [1, 16, 1, 500, 5, 1, 16, 2, 300, 1],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "equip left hand: q",
+        "action_codes": ["0x00040051"],
+        "key_points": [1, 15, 1, 250, 1],
+        "action_flags": 1
+      }},
+      {"coordinate_v3": {
+        "action_codes_explain": "equip right hand: e",
+        "action_codes": ["0x00040045"],
+        "key_points": [1, 16, 1, 750, 5],
+        "action_flags": 1
+      }}
+    ]
+  ]
+}

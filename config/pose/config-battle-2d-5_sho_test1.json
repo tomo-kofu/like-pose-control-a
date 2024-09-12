@@ -1,0 +1,161 @@
+{
+  "template_config": [
+    [
+      {"coordinate_v2": {
+        "action_codes_explain": ["0:素早いジャンプ：mouse down, up"],
+        "action_codes": ["0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210, "0x00010014", "0x00028003", 1560, 180, "0x00010014", "0x00028005", 1560, 180],
+        "key_points": [1, 33, 2],
+        "threshold_conditions": {"threshold": 0.25, "condition": 1},
+        "display_color": "0x990000",
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["1:素早い移動：mouse right + right"],
+        "action_codes": ["0x00028003", 1620, 210, "0x00010014", "0x00028005", 1620, 210, "0x00010014", "0x00028003", 1620, 210, "0x00010014", "0x00028005", 1620, 210],
+        "key_points": [1, 33, 1],
+        "threshold_conditions": {"threshold": 0.25, "condition": 1},
+        "display_color": "0x009900",
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["2:素早い移動：mouse left + left"],
+        "action_codes": ["0x00028003", 1510, 210, "0x00010014", "0x00028005", 1510, 210, "0x00010014", "0x00028003", 1510, 210, "0x00010014", "0x00028005", 1510, 210],
+        "key_points": [1, 33, 1],
+        "threshold_conditions": {"threshold": 0.75, "condition": 4},
+        "display_color": "0x009900",
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["3:移動：mouse up"],
+        "action_codes": ["0x00028003", 1560, 180, "0x00010014", "0x00028005", 1560, 180],
+        "key_points": [1, 33, 2],
+        "threshold_conditions": {"threshold": 0.3,  "condition": 1},
+        "display_color": "0xff5555",
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["4:移動：mouse down"],
+        "action_codes": ["0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210],
+        "key_points": [1, 33, 2],
+        "threshold_conditions": {"threshold": 0.6,  "condition": 4},
+        "display_color": "0xff5555",
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["5:移動：mouse right"],
+        "action_codes": ["0x00028003", 1620, 210, "0x00010014", "0x00028005", 1620, 210],
+        "key_points": [1, 33, 1],
+        "threshold_conditions": {"threshold": 0.4,  "condition": 1},
+        "display_color": "0xff5555",
+        "action_flags": 0
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": ["6:移動：mouse left"],
+        "action_codes": ["0x00028003", 1510, 210, "0x00010014", "0x00028005", 1510, 210],
+        "key_points": [1, 33, 1],
+        "threshold_conditions": {"threshold": 0.6,  "condition": 4},
+        "display_color": "0xff5555",
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["0:small attack(small punch): a: left punch"],
+        "action_codes": ["0x00028003",  930, 145, "0x00010014", "0x00028005", 930, 145],
+        "key_points": [11, 15, 41],
+        "check_vector": [{"threshold":    0.1, "condition": 4}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.6, "condition": 4}, {"threshold":    0.0, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.35, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["1:attack(small kick): c: left kick"],
+        "action_codes": ["0x00028003", 1085, 175, "0x00010014", "0x00028005", 1085, 175],
+        "key_points": [23, 25, 27, 41],
+        "check_vector": [{"threshold":    0.1, "condition": 4}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.4, "condition": 4}, {"threshold":    0.0, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.7, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["2:middle attack(punch): z: right punch"],
+        "action_codes": ["0x00028003",  975, 175, "0x00010014", "0x00028005", 975, 175],
+        "key_points": [12, 16, 41],
+        "check_vector": [{"threshold":    0.1, "condition": 4}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.6, "condition": 4}, {"threshold":    0.0, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.55, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["3:hight attack(large punch): x: upper punch: left"],
+        "action_codes": ["0x00028003", 1030, 175, "0x00010014", "0x00028005", 1030, 175],
+        "key_points": [23, 25, 27, 41],
+        "check_vector": [{"threshold": -100.0, "condition": 4}, {"threshold":     -0.1, "condition": 1}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.0, "condition": 4}, {"threshold":    0.4, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.55, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["4:hight attack(large punch): x: upper punch: right"],
+        "action_codes": ["0x00028003", 1030, 175, "0x00010014", "0x00028005", 1030, 175],
+        "key_points": [24, 26, 28, 41],
+        "check_vector": [{"threshold": -100.0, "condition": 4}, {"threshold":     -0.1, "condition": 1}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.0, "condition": 4}, {"threshold":    0.4, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 0.55, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["5:skill:対空：アッパー：RIGHT：->"],
+        "action_codes": ["0x00028003", 1620, 210, "0x00010014", "0x00028005", 1620, 210, "0x00010014", "0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210, "0x00010014", "0x00028003", 1620, 210, "0x00010014", "0x00028005", 1620, 210, "0x00010014", "0x00028003", 1030, 175, "0x00010014", "0x00028005", 1030, 175],
+        "key_points": [12, 14, 16, 41],
+        "check_vector": [{"threshold":    0.002, "condition": 4}, {"threshold":   -0.1, "condition": 1}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.1, "condition": 4}, {"threshold":    0.4, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 1.0, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["6:skill:対空：アッパー：RIGHT：<-"],
+        "action_codes": ["0x00028003", 1510, 210, "0x00010014", "0x00028005", 1510, 210, "0x00010014", "0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210, "0x00010014", "0x00028003", 1510, 210, "0x00010014", "0x00028005", 1510, 210, "0x00010014", "0x00028003", 1030, 175, "0x00010014", "0x00028005", 1030, 175],
+        "key_points": [12, 14, 16, 41],
+        "check_vector": [{"threshold":   -0.002, "condition": 2}, {"threshold":   -0.1, "condition": 1}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.1, "condition": 4}, {"threshold":    0.4, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 1.0, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["7:skill:対地：大きなパンチ：LEFT:->"],
+        "action_codes": ["0x00010014", "0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210, "0x00010014", "0x00028003", 1620, 210, "0x00010014", "0x00028005", 1620, 210, "0x00010014", "0x00028003", 1085, 175, "0x00010014", "0x00028005", 1085, 175],
+        "key_points": [11, 15, 41],
+        "check_vector": [{"threshold":    0.0, "condition": 4}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.7, "condition": 4}, {"threshold":    0.0, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 1.2, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["8:skill:対地：大きなパンチ：RIGHT:<-"],
+        "action_codes": ["0x00010014", "0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210, "0x00010014", "0x00028003", 1510, 210, "0x00010014", "0x00028005", 1510, 210, "0x00010014", "0x00028003", 1085, 175, "0x00010014", "0x00028005", 1085, 175],
+        "key_points": [12, 16, 41],
+        "check_vector": [{"threshold":    0.0, "condition": 2}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.7, "condition": 4}, {"threshold":    0.0, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 1.2, "condition": 5},
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["9:skill:超必：大きな蹴り：LEFT:->"],
+        "action_codes": ["0x00010014", "0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210, "0x00010014", "0x00028003", 1620, 210, "0x00010014", "0x00028005", 1620, 210, "0x00010014", "0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210, "0x00010014", "0x00028003", 1620, 210, "0x00010014", "0x00028005", 1620, 210, "0x00010014", "0x00028003",  975, 175, "0x00010014", "0x00028005", 975, 175],
+        "key_points": [23, 25, 27, 41],
+        "check_vector": [{"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.5, "condition": 4}, {"threshold":    0.0, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 2.0, "condition": 5}, 
+        "action_flags": 0
+      }},
+      {"frame_diff_v1": {
+        "action_codes_explain": ["10:skill:超必：大きな蹴り：RIGHT:-<"],
+        "action_codes": ["0x00010014", "0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210, "0x00010014", "0x00028003", 1510, 210, "0x00010014", "0x00028005", 1510, 210, "0x00010014", "0x00028003", 1560, 210, "0x00010014", "0x00028005", 1560, 210, "0x00010014", "0x00028003", 1510, 210, "0x00010014", "0x00028005", 1510, 210, "0x00010014", "0x00028003",  975, 175, "0x00010014", "0x00028005", 975, 175],
+        "key_points": [24, 26, 28, 41],
+        "check_vector": [{"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}, {"threshold": -100.0, "condition": 4}],
+        "check_vector_rate": [{"threshold":    0.5, "condition": 2}, {"threshold":    0.0, "condition": 4}, {"threshold":    0.0, "condition": 4}],
+        "threshold_conditions": {"threshold": 2.0, "condition": 5}, 
+        "action_flags": 0
+      }}
+    ]
+  ]
+}

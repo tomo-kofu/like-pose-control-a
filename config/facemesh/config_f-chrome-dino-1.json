@@ -1,0 +1,23 @@
+{
+  "target game": "chrome://dino",
+  "game explain": "jump:mouse upper 2D up line.",
+  "game explain": "down:mouse under 2D low line.",
+  "template_config": [
+    [
+      {"coordinate_v2": {
+        "action_codes_explain": "up",
+        "action_codes": ["0x00040026"],
+        "key_points": [1, 0, 2],
+        "threshold_conditions": {"threshold": 0.5, "condition": 1},
+        "action_flags": 1
+      }},
+      {"coordinate_v2": {
+        "action_codes_explain": "down",
+        "action_codes": ["0x00040028"],
+        "key_points": [1, 0, 2],
+        "threshold_conditions": {"threshold": 0.8, "condition": 4},
+        "action_flags": 1
+      }}
+    ]
+  ]
+}
