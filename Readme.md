@@ -79,7 +79,8 @@ bazel build -c opt --define MEDIAPIPE_DISABLE_GPU=1 --action_env PYTHON_BIN_PATH
 
 1. 設定ファイルを更新・作成
 
-https://healthier-happier-tmkf.blogspot.com/2024/03/like-pose-control.html
+[基本設定変更1](https://healthier-happier-tmkf.blogspot.com/2024/03/like-pose-control.html)
+[動作設定変更1](https://healthier-happier-tmkf.blogspot.com/2024/03/like-pose-control_17.html)
 
 それ以降については、まだ作成途中です。
 
