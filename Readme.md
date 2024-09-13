@@ -1,4 +1,4 @@
-# プロジェクト名
+# like pose control a
 
 このプロジェクトは、人の動作でパソコンを操作するツールです。
 
@@ -84,7 +84,9 @@ https://healthier-happier-tmkf.blogspot.com/2024/03/like-pose-control.html
 それ以降については、まだ作成途中です。
 
 2. 実行
+
 「https://kunsen.net/2021/01/30/post-3543/#Pose_Tracking」を参考(Hand Trackingと記載されていますが、実際にはPose Trackingのことです。)
+
 実行例：
 設定ファイル(config.json)をカレントディレクトリに配置して、以下を実行。
 > set GLOG_logtostderr=1 
